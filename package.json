@@ -1,0 +1,23 @@
+{
+  "name": "ensdk",
+  "version": "1.0.0",
+  "description": "An easy way to integrate Ethereum Name Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blockful-io/ensdk.git"
+  },
+  "keywords": [
+    "ENS"
+  ],
+  "author": "Alexandro T. Netto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blockful-io/ensdk/issues"
+  },
+  "homepage": "https://github.com/blockful-io/ensdk#readme",
+  "type": "module"
+}
