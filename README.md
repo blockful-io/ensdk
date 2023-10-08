@@ -6,8 +6,8 @@ Roadmap
 
 - [ ] General function
   - [x] namehash
+  - [x] generate secret for commitment, compatible with ENSIP-14
   - [ ] labelToId
-  - [ ] generate secret for commitment, compatible with ENSIP-14
 - [ ] ETHRegisterController
   - [ ] Commit
   - [ ] Register
