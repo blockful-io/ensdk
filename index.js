@@ -1,5 +1,3 @@
-const helloENS = () => {
-  return "Hello ENS!";
-};
-
-export default helloENS;
+import * as ensdk from "./ensdk.js";
+export { ensdk };
+export * from "./ensdk.js";
