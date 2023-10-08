@@ -19,5 +19,9 @@
     "url": "https://github.com/blockful-io/ensdk/issues"
   },
   "homepage": "https://github.com/blockful-io/ensdk#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@adraffy/ens-normalize": "^1.10.0",
+    "keccak256": "^1.0.6"
+  }
 }

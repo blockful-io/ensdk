@@ -5,7 +5,7 @@ A modular and lightweight package for integrating Ethereum Name Service
 Roadmap
 
 - [ ] General function
-  - [ ] namehash
+  - [x] namehash
   - [ ] labelToId
   - [ ] generate secret for commitment, compatible with ENSIP-14
 - [ ] ETHRegisterController
