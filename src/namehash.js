@@ -3,7 +3,7 @@ import { ens_normalize } from "@adraffy/ens-normalize";
 
 export function namehash(name) {
   const emptyNode = "0".repeat(64);
-  if ((name == "") | (name == undefined)) {
+  if (name == "" || name == undefined) {
     return "0x" + emptyNode;
   }
 
