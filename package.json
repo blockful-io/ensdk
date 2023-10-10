@@ -4,7 +4,7 @@
   "description": "An easy way to integrate Ethereum Name Service",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 jest"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "dependencies": {
     "@adraffy/ens-normalize": "^1.10.0",
     "keccak256": "^1.0.6"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
