@@ -1,15 +1,15 @@
-import keccak256 from "keccak256";
-import { namehash } from "./namehash.js";
+import keccak256 from 'keccak256';
+import namehash from './namehash';
 
-export function nameToId(name, isWrapped = false) {
+export default function nameToId(name, isWrapped = false) {
   // TODO: Implement error for not .eth name
-  var hash;
+  let hash;
   if (isWrapped) {
-    hash = namehash(name).toString("hex");
+    hash = namehash(name).toString('hex');
   } else {
-    const labels = name.split(".");
+    const labels = name.split('.');
     const secondLevelDomain = labels.at(-2);
-    hash = "0x" + keccak256(secondLevelDomain).toString("hex");
+    hash = `0x${keccak256(secondLevelDomain).toString('hex')}`;
 
     // TODO: Implement error for names without 2LD
   }

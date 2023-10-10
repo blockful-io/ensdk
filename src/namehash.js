@@ -1,26 +1,26 @@
-import keccak256 from "keccak256";
-import { ens_normalize } from "@adraffy/ens-normalize";
+import keccak256 from 'keccak256';
+/* eslint-disable camelcase */
+import { ens_normalize } from '@adraffy/ens-normalize';
 
-export function namehash(name) {
-  const emptyNode = "0".repeat(64);
-  if (name == "" || name == undefined) {
-    return "0x" + emptyNode;
+export default function namehash(name) {
+  const emptyNode = '0'.repeat(64);
+  if (name === '' || name === undefined) {
+    return `0x${emptyNode}`;
   }
 
   const normalizedName = ens_normalize(name);
 
-  const labels = normalizedName.split(".");
+  const labels = normalizedName.split('.');
 
   const node = labels.reduceRight(
-    (node, label) =>
-      keccak256(
-        Buffer.from(
-          node.toString("hex") + keccak256(label).toString("hex"),
-          "hex"
-        )
+    (currentNode, label) => keccak256(
+      Buffer.from(
+        currentNode.toString('hex') + keccak256(label).toString('hex'),
+        'hex',
       ),
-    emptyNode
+    ),
+    emptyNode,
   );
 
-  return "0x" + node.toString("hex");
+  return `0x${node.toString('hex')}`;
 }

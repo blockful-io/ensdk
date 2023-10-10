@@ -4,7 +4,8 @@
   "description": "An easy way to integrate Ethereum Name Service",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 jest",
+    "lint": "npx eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
     "keccak256": "^1.0.6"
   },
   "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-config-airbnb": "^19.0.4",
     "jest": "^29.7.0"
   }
 }

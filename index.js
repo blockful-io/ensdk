@@ -1,3 +1,4 @@
-import * as ensdk from "./ensdk.js";
+import * as ensdk from './ensdk';
+
 export { ensdk };
-export * from "./ensdk.js";
+export * from './ensdk';
