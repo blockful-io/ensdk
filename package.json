@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 jest",
-    "lint": "npx eslint . --fix"
+    "lint": "npx eslint . --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -26,8 +27,11 @@
     "keccak256": "^1.0.6"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
     "eslint": "^8.51.0",
     "eslint-config-airbnb": "^19.0.4",
+    "husky": "^8.0.3",
     "jest": "^29.7.0"
   }
 }
